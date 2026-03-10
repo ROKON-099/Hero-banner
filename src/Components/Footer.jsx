@@ -1,32 +1,35 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-  <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
-</footer>
-    </div>
-  )
-}
+    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      
+      <nav>
+        <h6 className="footer-title">Services</h6>
+        <Link to="#" className="link link-hover">Branding</Link>
+        <Link to="#" className="link link-hover">Design</Link>
+        <Link to="#" className="link link-hover">Marketing</Link>
+        <Link to="#" className="link link-hover">Advertisement</Link>
+      </nav>
 
-export default Footer
+      <nav>
+        <h6 className="footer-title">Company</h6>
+        <Link to="/about" className="link link-hover">About us</Link>
+        <Link to="/contact" className="link link-hover">Contact</Link>
+        <Link to="#" className="link link-hover">Jobs</Link>
+        <Link to="#" className="link link-hover">Press kit</Link>
+      </nav>
+
+      <nav>
+        <h6 className="footer-title">Legal</h6>
+        <Link to="#" className="link link-hover">Terms of use</Link>
+        <Link to="#" className="link link-hover">Privacy policy</Link>
+        <Link to="#" className="link link-hover">Cookie policy</Link>
+      </nav>
+
+    </footer>
+  );
+};
+
+export default Footer;
